@@ -1,0 +1,120 @@
+@import 
+url("https://fonts.google.com/specimen/League+Spartan");
+.main{
+    /* font-family:'Courier New', Courier, monospace; */
+    outline:1px solid brown;
+   width:40%;
+   margin:10px;
+   height:450px;
+
+    
+}
+/* container the whole calculator---------------------- */
+.container{
+   outline: 2px solid brown;;
+   justify-content: center;
+   background-color:  hsl(222, 26%, 31%);
+    height: 530px;
+    display: flex;
+    align-items: center;
+}
+
+
+/* ----header----------- */
+.header{
+    display:flex;
+    width: 100%;
+    justify-content: space-between;
+
+}
+li{
+    display: inline;
+    margin: 0;
+    padding:0;
+    list-style-type: none;
+}
+.calc > p,
+.theme > p{
+    margin: 0;
+    padding: 0;
+}
+
+.toggle-theme{
+    display: flex;
+    justify-content: space-between;
+    width:20%;
+}
+
+/* ---------screen-------- */
+.screen{
+    border-radius: 10px;
+    margin-top: 10px;
+    /* padding:10px; */
+    display:flex;
+    background-color: hsl(224, 36%, 15%);
+    justify-content: flex-end;
+    width:90%;
+    /* width:300px; */
+}
+
+.display{
+    font-size:35px;
+    color:white;
+    padding:10px;
+}
+.display > p{
+    margin:0;
+    font-weight:700;
+}
+
+/* -----buttons---------- */
+/* 
+.calc-layout{
+    outline: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center; */
+/* } */
+.calc-layout{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.calc-button{
+    border-radius: 10px;
+    margin-top: 10px;
+    width: 90%;
+    background-color: hsl(223, 31%, 20%);
+    padding:5px
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+button{
+    box-sizing: border-box;
+    font-weight: 700;
+    width: 90px;
+    height:45px;
+    border:none;
+    border-radius: 4px;
+    color: rgb(68, 75, 90);
+    background-color: rgb(234, 227, 220);
+}
+.button{
+    padding:10px;
+}
+.reset > button ,.equal > button{
+    width:200px;
+}
+.delete > button, .reset > button{
+   background-color: hsl(224, 28%, 35%)
+;
+   color: white;
+}
+
+.equal > button{
+    background-color: hsl(6, 63%, 50%);
+    color: white;
+}
