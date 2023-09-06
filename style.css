@@ -1,20 +1,20 @@
-@import 
-url("https://fonts.google.com/specimen/League+Spartan");
+@import url("https://fonts.google.com/specimen/League+Spartan");
+body{
+    overflow: hidden;
+    margin:0;
+}
 .main{
     /* font-family:'Courier New', Courier, monospace; */
-    outline:1px solid brown;
+    font-family: "League", sans-serif;
    width:40%;
    margin:10px;
-   height:450px;
 
-    
 }
 /* container the whole calculator---------------------- */
 .container{
-   outline: 2px solid brown;;
    justify-content: center;
    background-color:  hsl(222, 26%, 31%);
-    height: 530px;
+    height: 100vh;
     display: flex;
     align-items: center;
 }
@@ -25,7 +25,6 @@ url("https://fonts.google.com/specimen/League+Spartan");
     display:flex;
     width: 100%;
     justify-content: space-between;
-
 }
 li{
     display: inline;
@@ -39,11 +38,37 @@ li{
     padding: 0;
 }
 
+.calc{
+    font-size:20px;
+    font-weight: bolder;
+    color:hsl(6, 63%, 50%);
+    padding-left:35px;
+}
+
+
+
 .toggle-theme{
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    /* justify-content: space-between; */
+    color:hsl(6, 63%, 50%);
     width:20%;
+    font-size:10px;
+    font-weight: 900;
 }
+.change-theme{
+    background-color:hsl(6, 63%, 50%);
+    width:20px;
+    height:20px;
+
+    border-radius: 50%;
+    text-align: center;
+}
+.theme{
+    padding-left:10px;
+    
+}
+
 
 /* ---------screen-------- */
 .screen{
@@ -93,7 +118,6 @@ li{
     justify-content: space-between;
 }
 button{
-    box-sizing: border-box;
     font-weight: 700;
     width: 90px;
     height:45px;
@@ -101,9 +125,18 @@ button{
     border-radius: 4px;
     color: rgb(68, 75, 90);
     background-color: rgb(234, 227, 220);
+    
+}
+
+button:hover{
+    transform: translate(0, 3px);
+   background-color: hsl(224, 28%, 35%);
+    transition: all 0.3s ease;
+    color:white;
 }
 .button{
     padding:10px;
+ 
 }
 .reset > button ,.equal > button{
     width:200px;
