@@ -129,12 +129,15 @@ button{
 }
 
 button:hover{
-    transform: translate(0, 3px);
    background-color: hsl(224, 28%, 35%);
-    transition: all 0.3s ease;
+    transition: all 0.2s ease;
     color:white;
 }
+.button:hover:active{
+    transform: translate(0, 3px);
+}
 .button{
+
     padding:10px;
  
 }
